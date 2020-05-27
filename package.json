@@ -1,0 +1,26 @@
+{
+  "name": "lim012-fe-md-links",
+  "version": "1.0.0",
+  "description": "Lu-MdLinks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lourdes0896/LIM012-fe-md-links.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lourdes0896/LIM012-fe-md-links/issues"
+  },
+  "homepage": "https://github.com/Lourdes0896/LIM012-fe-md-links#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.0.1",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.0.1",
+    "regenerator-runtime": "^0.13.5"
+  }
+}
