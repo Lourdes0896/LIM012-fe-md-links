@@ -113,6 +113,21 @@ describe('Guardar en un array los files con extension .md', () => {
 
 describe('Extraer los links de los file .md', () => {
   it('Es una funcion', () => {
-      expect (typeof getFileMD).toBe('function');
+      expect (typeof extractLinkFile).toBe('function');
   });
+  it('Debe guardar los file md en un array', () => {
+    const outputLinksfile = [
+      {
+        href: "https://es.wikipedia.org/wiki/Markdown",
+        text: "Markdown",
+        file: "src\\prueba.md"
+      },
+      {
+        href: "https://nodejs.org/",
+        text: "Node.js",
+        file: "src\\prueba.md"
+      }
+    ]
+    expect(extractLinkFile(path.join('./src/prueba.md'))).toEqual(outputLinksfile);
+});
 });
