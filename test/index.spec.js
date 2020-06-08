@@ -74,7 +74,7 @@ describe('Identificar los elementos del directorio', () => {
       expect (typeof readDirectory).toBe('function');
   });
   it('Debe identificar los elementos del directorio', () => {
-    const identDir = ['cli.js', 'hola.md', 'index.js', 'prueba.md']
+    const identDir = ['cli.js', 'hola.md', 'index.js', 'mdLinks.js', 'prueba.md', 'validate.js']
     expect(readDirectory(path.join('./src'))).toEqual(identDir);
 });
 });
@@ -95,7 +95,7 @@ describe('Identificar las rutas de los elementos del directorio', () => {
       expect (typeof getArrayFilesAndDir).toBe('function');
   });
   it('Debe identificar las rutas de los elementos del directorio', () => {
-    const outputDir = ['src\\cli.js', 'src\\hola.md', 'src\\index.js', 'src\\prueba.md']
+    const outputDir = ['src\\cli.js', 'src\\hola.md', 'src\\index.js', 'src\\mdLinks.js', 'src\\prueba.md', 'src\\validate.js',]
     expect(getArrayFilesAndDir(path.join('./src'))).toEqual(outputDir);
 });
 });

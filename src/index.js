@@ -12,42 +12,42 @@ const checkRoute = (route) => {
     }
     return routeIsValid;
   };
-   console.log('ruta ingresada valida', checkRoute('./README.md'));
+  //  console.log('ruta ingresada valida', checkRoute('./README.md'));
 
 // función para saber si ruta es absoluta - boolean
 const checkAbsolutePath = (route) => path.isAbsolute(route);
-console.log('la ruta es absoluta', checkAbsolutePath('./README.md'));
+// console.log('la ruta es absoluta', checkAbsolutePath('./README.md'));
 
 // función para transformar ruta relativa a absoluta
 const routeAbsolute = (route) => (path.isAbsolute(route) === true ? route : (path.resolve(route)));
-console.log('Transformando la ruta', routeAbsolute('./README.md'));
+// console.log('Transformando la ruta', routeAbsolute('./README.md'));
 
 // verificar si es un archivo - boolean
 const isFile = (route) => fs.statSync(route).isFile();
-console.log('es un archivo', isFile('./README.md'));
+// console.log('es un archivo', isFile('./README.md'));
 
 // para leer un archivo sincrono
 const readFiles = (doc) => fs.readFileSync(doc, 'utf8');
-console.log('leyendo elementos de un archivo', readFiles('./src/prueba.md'))
+// console.log('leyendo elementos de un archivo', readFiles('./src/prueba.md'))
 
 // verificar si es un directorio -boolean *
 const isDirectory = (route) => fs.lstatSync(route).isDirectory();
-console.log('es un directorio', isDirectory('./README.md'));
+// console.log('es un directorio', isDirectory('./README.md'));
 
 //lee los elementos del directorio
 const readDirectory = (route) => fs.readdirSync(route);
-console.log('leyendo elementos del directorio', readDirectory('./src'));
+// console.log('leyendo elementos del directorio', readDirectory('./src'));
 
 // Función para identificar que tipo de extencion es la ruta/directorio
 const routeExtension = (route) => path.extname(route);
-console.log('la extencion del archivo es', routeExtension('./test.spec.js'));
+// console.log('la extencion del archivo es', routeExtension('./test.spec.js'));
 
 //array de las rutas de los elementos del directorio **
 const getArrayFilesAndDir = (route) => {
     return readDirectory(route).map(element =>
       path.join(route, element),); //string
   };
-console.log('elementos del directorio con su ruta', getArrayFilesAndDir('./src'));
+// console.log('elementos del directorio con su ruta', getArrayFilesAndDir('./src'));
 
 
 
@@ -61,13 +61,15 @@ const getFileMD = (route) =>{
     } else  {
       getArrayFilesAndDir(route).forEach((element) => {
         const fileNewRoute = path.join(element);
+        // console.log('holaaaaaaaaa', fileNewRoute);
         const getMDfileNewRoute = getFileMD(fileNewRoute);
         arrFileMD = arrFileMD.concat(getMDfileNewRoute);
       });
     };
     return arrFileMD;
 };
-console.log ('Array exclusivo de file .md', getFileMD('./src'));
+// console.log ('Array exclusivo de file .md', getFileMD('./src'));
+
 
 
 // extraer los link de los file.md 
@@ -82,12 +84,12 @@ const extractLinkFile = (route) => {
        };
        arrLinks.push(link);
      };
-     //convierte el contenido en html y se usa el render para buscar 
+     //convierte el contenido del file en html y usa el renderer para buscar 
      marked(readFiles(file), { renderer });
    });
    return arrLinks;
  };
-console.log('extraer link de file', extractLinkFile('./src/prueba.md'));
+ //console.log('extraer link de file', extractLinkFile('./src/prueba.md'));
 
 module.exports = {
     checkRoute,
