@@ -38,7 +38,7 @@ const isDirectory = (route) => fs.lstatSync(route).isDirectory();
 const readDirectory = (route) => fs.readdirSync(route);
 // console.log('leyendo elementos del directorio', readDirectory('./src'));
 
-// Función para identificar que tipo de extencion es la ruta/directorio
+// Función para identificar que tipo de extension es la ruta/directorio
 const routeExtension = (route) => path.extname(route);
 // console.log('la extencion del archivo es', routeExtension('./test.spec.js'));
 

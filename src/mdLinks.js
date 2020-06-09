@@ -2,11 +2,11 @@ const { extractLinkFile } = require ('./index.js');
 const { optionValidate } = require ('./validate.js');
 
 const mdLinks = (route, options = { optionValidate : false}) => {
-    return promesa = new Promise ((resolve) => {
+    return promesa = new Promise ((result) => {
         if (options.validate === true ) {
-            resolve (optionValidate(route))
+            result (optionValidate(route))
         } else {
-            resolve (extractLinkFile(route))
+            result (extractLinkFile(route))
         }
     });
 }
