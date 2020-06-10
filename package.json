@@ -28,6 +28,7 @@
     "regenerator-runtime": "^0.13.5"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
     "eslint-plugin-jest": "^23.13.2",
     "marked": "^1.1.0",
     "node-fetch": "^2.6.0"
