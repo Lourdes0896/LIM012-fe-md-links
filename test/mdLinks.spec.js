@@ -24,7 +24,11 @@ describe ('Opcion de Validar los links', () => {
           text: 'Markdown',
           file: './src/prueba.md'
         },
-  
+        {
+          href: 'https://nodejs.org/',
+          text: 'Node.js',
+          file: './src/prueba.md'
+        }
       ];
 
       it ('Si la option es TRUE debe verificar los links y me va a devolver su href, text, file, statusText, status', (done) => {
