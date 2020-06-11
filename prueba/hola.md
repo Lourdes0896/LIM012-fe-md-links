@@ -1,4 +1,3 @@
-**Hola MUNDO**
 
 ## Objetivos
 

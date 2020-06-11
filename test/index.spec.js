@@ -54,7 +54,7 @@ describe('Identificar los elementos del file', () => {
       expect (typeof readFiles).toBe('function');
   });
   it('Debe identificar los elementos del file', () => {
-    expect(readFiles(path.join('./src/hola.md'))).toEqual('**Hola MUNDO**');
+    expect(readFiles(path.join("./prueba/subPrueba/book2.md"))).toEqual('**Hola MUNDO**');
 });
 });
 
@@ -74,7 +74,7 @@ describe('Identificar los elementos del directorio', () => {
       expect (typeof readDirectory).toBe('function');
   });
   it('Debe identificar los elementos del directorio', () => {
-    const identDir = ['cli.js', 'cliOptions.js', 'hola.md', 'index.js', 'mdLinks.js', 'prueba.md', 'validate.js']
+    const identDir = ['cli.js', 'cliOptions.js', 'index.js', 'mdLinks.js', 'validate.js']
     expect(readDirectory(path.join('./src'))).toEqual(identDir);
 });
 });
@@ -95,8 +95,8 @@ describe('Identificar las rutas de los elementos del directorio', () => {
       expect (typeof getArrayFilesAndDir).toBe('function');
   });
   it('Debe identificar las rutas de los elementos del directorio', () => {
-    const outputDir = ['src\\cli.js','src\\cliOptions.js', 'src\\hola.md', 'src\\index.js', 'src\\mdLinks.js', 'src\\prueba.md', 'src\\validate.js',]
-    expect(getArrayFilesAndDir(path.join('./src'))).toEqual(outputDir);
+    const outputDir = ['prueba\\hola.md','prueba\\subPrueba']
+    expect(getArrayFilesAndDir(path.join('./prueba'))).toEqual(outputDir);
 });
 });
 
@@ -106,8 +106,8 @@ describe('Guardar en un array los files con extension .md', () => {
       expect (typeof getFileMD).toBe('function');
   });
   it('Debe guardar los file md en un array', () => {
-    const outputfilemd = [ 'src\\hola.md', 'src\\prueba.md' ]
-    expect(getFileMD(path.join('./src'))).toEqual(outputfilemd);
+    const outputfilemd = [ "prueba\\hola.md", "prueba\\subPrueba\\book1.md", "prueba\\subPrueba\\book2.md"]
+    expect(getFileMD(path.join('./prueba'))).toEqual(outputfilemd);
 });
 });
 
@@ -120,14 +120,14 @@ describe('Extraer los links de los file .md', () => {
       {
         href: "https://es.wikipedia.org/wiki/Markdown",
         text: "Markdown",
-        file: "src\\prueba.md"
+        file: "prueba\\subPrueba\\book1.md"
       },
       {
         href: "https://nodejs.org/",
         text: "Node.js",
-        file: "src\\prueba.md"
+        file: "prueba\\subPrueba\\book1.md"
       }
     ]
-    expect(extractLinkFile(path.join('./src/prueba.md'))).toEqual(outputLinksfile);
+    expect(extractLinkFile(path.join('./prueba/subPrueba'))).toEqual(outputLinksfile);
 });
 });

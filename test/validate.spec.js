@@ -1,19 +1,26 @@
 const { optionValidate } = require ('../src/validate');
 
 describe ('Validar los Links', () => {
-    const input = "./src/prueba.md";
+    const input = "./prueba";
     const output = [
         {
+            href: 'https://nodejs.org/en/',
+            text: 'Node.js',
+            file: 'prueba\\hola.md',       
+            statusText: 'ok',
+            status: 200
+          },
+          {
             href: 'https://es.wikipedia.org/wiki/Markdown',
             text: 'Markdown',
-            file: './src/prueba.md',
+            file: 'prueba\\subPrueba\\book1.md',
             statusText: 'ok',
             status: 200
           },
           {
             href: 'https://nodejs.org/',
             text: 'Node.js',
-            file: './src/prueba.md',
+            file: 'prueba\\subPrueba\\book1.md',
             statusText: 'ok',
             status: 200
           }

@@ -1,19 +1,19 @@
 const { mdLinks } = require ('../src/mdLinks.js');
 
 describe ('Opcion de Validar los links', () => {
-    const input = "./src/prueba.md";
+    const input = "./prueba/subPrueba/book1.md";
     const outputValidate =  [
         {
             href: 'https://es.wikipedia.org/wiki/Markdown',
             text: 'Markdown',
-            file: './src/prueba.md',
+            file: './prueba/subPrueba/book1.md',
             statusText: 'ok',
             status: 200
           },
           {
             href: 'https://nodejs.org/',
             text: 'Node.js',
-            file: './src/prueba.md',
+            file: './prueba/subPrueba/book1.md',
             statusText: 'ok',
             status: 200
           }
@@ -22,12 +22,12 @@ describe ('Opcion de Validar los links', () => {
         {
           href: 'https://es.wikipedia.org/wiki/Markdown',
           text: 'Markdown',
-          file: './src/prueba.md'
+          file: './prueba/subPrueba/book1.md'
         },
         {
           href: 'https://nodejs.org/',
           text: 'Node.js',
-          file: './src/prueba.md'
+          file: './prueba/subPrueba/book1.md'
         }
       ];
 
