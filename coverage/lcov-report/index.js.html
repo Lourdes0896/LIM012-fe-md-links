@@ -188,23 +188,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -218,10 +218,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -231,7 +231,7 @@
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -239,20 +239,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -283,42 +283,42 @@ const checkRoute = (route) =&gt; {
     }
     return routeIsValid;
   };
-  //  console.log('ruta ingresada valida', checkRoute('./README.md'));
+ // console.log('ruta ingresada valida', checkRoute('./README.md'));
 &nbsp;
 // función para saber si ruta es absoluta - boolean
 const checkAbsolutePath = (route) =&gt; path.isAbsolute(route);
-// console.log('la ruta es absoluta', checkAbsolutePath('./README.md'));
+ //console.log('la ruta es absoluta', checkAbsolutePath('./README.md'));
 &nbsp;
 // función para transformar ruta relativa a absoluta
 const routeAbsolute = (route) =&gt; (path.isAbsolute(route) === true ? <span class="branch-0 cbranch-no" title="branch not covered" >route </span>: (path.resolve(route)));
-// console.log('Transformando la ruta', routeAbsolute('./README.md'));
+ //console.log('Transformando la ruta', routeAbsolute('./README.md'));
 &nbsp;
 // verificar si es un archivo - boolean
 const isFile = (route) =&gt; fs.statSync(route).isFile();
-// console.log('es un archivo', isFile('./README.md'));
+ //console.log('es un archivo', isFile('./README.md'));
 &nbsp;
 // para leer un archivo sincrono
 const readFiles = (doc) =&gt; fs.readFileSync(doc, 'utf8');
-// console.log('leyendo elementos de un archivo', readFiles('./src/prueba.md'))
+ //console.log('leyendo elementos de un archivo', readFiles('./src/prueba.md'))
 &nbsp;
 // verificar si es un directorio -boolean *
 const isDirectory = (route) =&gt; fs.lstatSync(route).isDirectory();
-// console.log('es un directorio', isDirectory('./README.md'));
+//console.log('es un directorio', isDirectory('./README.md'));
 &nbsp;
 //lee los elementos del directorio
 const readDirectory = (route) =&gt; fs.readdirSync(route);
-// console.log('leyendo elementos del directorio', readDirectory('./src'));
+ //console.log('leyendo elementos del directorio', readDirectory('./src'));
 &nbsp;
 // Función para identificar que tipo de extension es la ruta/directorio
 const routeExtension = (route) =&gt; path.extname(route);
-// console.log('la extencion del archivo es', routeExtension('./test.spec.js'));
+//console.log('la extencion del archivo es', routeExtension('./test.spec.js'));
 &nbsp;
 //array de las rutas de los elementos del directorio **
 const getArrayFilesAndDir = (route) =&gt; {
     return readDirectory(route).map(element =&gt;
       path.join(route, element),); //string
   };
-// console.log('elementos del directorio con su ruta', getArrayFilesAndDir('./src'));
+//console.log('elementos del directorio con su ruta', getArrayFilesAndDir('./src'));
 &nbsp;
 &nbsp;
 &nbsp;
@@ -339,7 +339,7 @@ const getFileMD = (route) =&gt;{
     };
     return arrFileMD;
 };
-// console.log ('Array exclusivo de file .md', getFileMD('./src'));
+//console.log ('Array exclusivo de file .md', getFileMD('./src'));
 &nbsp;
 &nbsp;
 &nbsp;
@@ -360,7 +360,7 @@ const extractLinkFile = (route) =&gt; {
    });
    return arrLinks;
  };
- //console.log('extraer link de file', extractLinkFile('./src/prueba.md'));
+//console.log('extraer link de file', extractLinkFile('./src/prueba.md'));
 &nbsp;
 module.exports = {
     checkRoute,
@@ -382,7 +382,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Jun 10 2020 09:02:47 GMT-0500 (GMT-05:00)
+                at Thu Jun 11 2020 11:05:39 GMT-0500 (GMT-05:00)
             </div>
         </div>
         <script src="prettify.js"></script>

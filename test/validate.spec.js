@@ -22,6 +22,7 @@ describe ('Validar los Links', () => {
         optionValidate(input).then((resul) => {
             expect (resul).toEqual(output);
             done();
-        });
+        })
+        .catch((error) => done(error));
     });
 });

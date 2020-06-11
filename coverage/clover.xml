@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1591797767343" clover="3.2.0">
-  <project timestamp="1591797767344" name="All files">
-    <metrics statements="58" coveredstatements="57" conditionals="15" coveredconditionals="12" methods="21" coveredmethods="20" elements="94" coveredelements="89" complexity="0" loc="58" ncloc="58" packages="1" files="3" classes="3"/>
+<coverage generated="1591891539091" clover="3.2.0">
+  <project timestamp="1591891539092" name="All files">
+    <metrics statements="57" coveredstatements="56" conditionals="15" coveredconditionals="12" methods="20" coveredmethods="20" elements="92" coveredelements="88" complexity="0" loc="57" ncloc="57" packages="1" files="3" classes="3"/>
     <file name="index.js" path="C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\src\index.js">
       <metrics statements="38" coveredstatements="37" conditionals="8" coveredconditionals="6" methods="15" coveredmethods="15"/>
       <line num="1" count="3" type="stmt"/>
@@ -15,44 +15,43 @@
       <line num="13" count="1" type="stmt"/>
       <line num="18" count="3" type="stmt"/>
       <line num="22" count="3" type="cond" truecount="1" falsecount="1"/>
-      <line num="26" count="15" type="stmt"/>
-      <line num="30" count="7" type="stmt"/>
+      <line num="26" count="14" type="stmt"/>
+      <line num="30" count="6" type="stmt"/>
       <line num="34" count="3" type="stmt"/>
       <line num="38" count="3" type="stmt"/>
-      <line num="42" count="14" type="stmt"/>
+      <line num="42" count="13" type="stmt"/>
       <line num="46" count="3" type="stmt"/>
       <line num="47" count="2" type="stmt"/>
       <line num="48" count="14" type="stmt"/>
       <line num="55" count="3" type="stmt"/>
-      <line num="56" count="14" type="stmt"/>
-      <line num="57" count="14" type="cond" truecount="2" falsecount="0"/>
-      <line num="58" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="59" count="8" type="stmt"/>
+      <line num="56" count="13" type="stmt"/>
+      <line num="57" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="58" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="59" count="7" type="stmt"/>
       <line num="62" count="1" type="stmt"/>
       <line num="63" count="7" type="stmt"/>
       <line num="65" count="7" type="stmt"/>
       <line num="66" count="7" type="stmt"/>
-      <line num="69" count="14" type="stmt"/>
+      <line num="69" count="13" type="stmt"/>
       <line num="76" count="3" type="stmt"/>
-      <line num="77" count="6" type="stmt"/>
-      <line num="78" count="6" type="stmt"/>
-      <line num="79" count="6" type="stmt"/>
-      <line num="80" count="12" type="stmt"/>
-      <line num="85" count="12" type="stmt"/>
-      <line num="88" count="6" type="stmt"/>
-      <line num="90" count="6" type="stmt"/>
+      <line num="77" count="5" type="stmt"/>
+      <line num="78" count="5" type="stmt"/>
+      <line num="79" count="5" type="stmt"/>
+      <line num="80" count="10" type="stmt"/>
+      <line num="85" count="10" type="stmt"/>
+      <line num="88" count="5" type="stmt"/>
+      <line num="90" count="5" type="stmt"/>
       <line num="94" count="3" type="stmt"/>
     </file>
     <file name="mdLinks.js" path="C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\src\mdLinks.js">
-      <metrics statements="9" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="2"/>
+      <metrics statements="8" coveredstatements="8" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="5" count="4" type="stmt"/>
-      <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="7" count="2" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
       <line num="9" count="2" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
     </file>
     <file name="validate.js" path="C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\src\validate.js">
@@ -60,13 +59,13 @@
       <line num="1" count="2" type="stmt"/>
       <line num="2" count="2" type="stmt"/>
       <line num="5" count="2" type="stmt"/>
-      <line num="6" count="3" type="stmt"/>
-      <line num="7" count="6" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="15" count="2" type="cond" truecount="3" falsecount="1"/>
-      <line num="16" count="2" type="stmt"/>
-      <line num="17" count="2" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="15" count="4" type="cond" truecount="3" falsecount="1"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="17" count="4" type="stmt"/>
+      <line num="18" count="4" type="stmt"/>
       <line num="25" count="2" type="stmt"/>
     </file>
   </project>

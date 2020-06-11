@@ -32,22 +32,27 @@ describe ('Opcion de Validar los links', () => {
       ];
 
       it ('Si la option es TRUE debe verificar los links y me va a devolver su href, text, file, statusText, status', (done) => {
-          mdLinks (input, {validate:true}).then((resul) => {
+          mdLinks (input, {validate:true})
+          .then((result) => {
               expect (result). toEqual (outputValidate);
-          });
-          done();
+              done();
+          })
+          .catch((error) => done(error));
+          
       });
 
       it ('Si la option es FALSE debe devolver su href, text, file', (done) => {
-        mdLinks (input, {validate:false}).then((resul) => {
+        mdLinks (input, {validate:false}).then((result) => {
             expect (result). toEqual (output);
-        });
-        done();
+            done();
+        })
+        .catch((error) => done(error));
     });
     it ('Si solo tiene un parametro debe devolver su href, text, file', (done) => {
-        mdLinks (input).then((resul) => {
+        mdLinks (input).then((result) => {
             expect (result). toEqual (output);
-        });
-        done();
+            done();
+        })
+        .catch((error) => done(error));
     });
 })
