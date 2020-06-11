@@ -20,7 +20,7 @@ const optionValidate = (route) => {
     }));
 };
   
-optionValidate('./prueba').then((resp) => console.log('holaaaaaaa', resp));
+//optionValidate('./prueba').then((resp) => console.log('holaaaaaaa', resp));
 
 module.exports = {
   optionValidate

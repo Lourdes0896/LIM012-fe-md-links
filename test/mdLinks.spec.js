@@ -1,34 +1,46 @@
 const { mdLinks } = require ('../src/mdLinks.js');
 
 describe ('Opcion de Validar los links', () => {
-    const input = "./prueba/subPrueba/book1.md";
+    const input = "./prueba";
     const outputValidate =  [
-        {
-            href: 'https://es.wikipedia.org/wiki/Markdown',
-            text: 'Markdown',
-            file: './prueba/subPrueba/book1.md',
-            statusText: 'ok',
-            status: 200
-          },
-          {
-            href: 'https://nodejs.org/',
-            text: 'Node.js',
-            file: './prueba/subPrueba/book1.md',
-            statusText: 'ok',
-            status: 200
-          }
+      {
+        href: 'https://nodejs.org/en/',
+        text: 'Node.js',
+        file: 'prueba\\hola.md',       
+        statusText: 'ok',
+        status: 200
+      },
+      {
+        href: 'https://es.wikipedia.org/wiki/Markdown',
+        text: 'Markdown',
+        file: 'prueba\\subPrueba\\book1.md',
+        statusText: 'ok',
+        status: 200
+      },
+      {
+        href: 'https://nodejs.org/',
+        text: 'Node.js',
+        file: 'prueba\\subPrueba\\book1.md',
+        statusText: 'ok',
+        status: 200
+      }
     ];
     const output = [
-        {
-          href: 'https://es.wikipedia.org/wiki/Markdown',
-          text: 'Markdown',
-          file: './prueba/subPrueba/book1.md'
-        },
-        {
-          href: 'https://nodejs.org/',
-          text: 'Node.js',
-          file: './prueba/subPrueba/book1.md'
-        }
+      {
+        href: 'https://nodejs.org/en/',
+        text: 'Node.js',
+        file: 'prueba\\hola.md'
+      },
+      {
+        href: 'https://es.wikipedia.org/wiki/Markdown',
+        text: 'Markdown',
+        file: 'prueba\\subPrueba\\book1.md'
+      },
+      {
+        href: 'https://nodejs.org/',
+        text: 'Node.js',
+        file: 'prueba\\subPrueba\\book1.md'
+      }
       ];
 
       it ('Si la option es TRUE debe verificar los links y me va a devolver su href, text, file, statusText, status', (done) => {
