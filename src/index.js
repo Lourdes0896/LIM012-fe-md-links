@@ -85,11 +85,12 @@ const extractLinkFile = (route) => {
        arrLinks.push(link);
      };
      //convierte el contenido del file en html y usa el renderer para buscar 
-     marked(readFiles(file), { renderer });
+     marked(readFiles(file), { renderer })
    });
    return arrLinks;
  };
-//console.log('extraer link de file', extractLinkFile('./src/prueba.md'));
+
+//console.log('extraer link de file', extractLinkFile('./prueba'));
 
 module.exports = {
     checkRoute,

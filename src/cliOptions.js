@@ -20,8 +20,8 @@ const linkFile = (objLinks) => {
     if( objLinks.length > 0) {
         objLinks.forEach((element => {
         basicPropertys += `
-        ${chalk.blueBright('Path: ')} ${chalk.yellowBright(element.file)}
-        ${chalk.blueBright('Link: ')} ${chalk.yellowBright(element.href)}
+        ${chalk.blueBright('File: ')} ${chalk.yellowBright(element.file)}
+        ${chalk.blueBright('Href: ')} ${chalk.yellowBright(element.href)}
         ${chalk.blueBright('Text: ')} ${chalk.yellowBright(element.text.substring(0, 50))}`;
 
         }));
@@ -32,9 +32,57 @@ const linkFile = (objLinks) => {
     return basicPropertys;
 }
 
-// console.log(linkFile(prueba));
+//console.log(linkFile(prueba));
+
+const validate = (objLinks) => {
+  let printLinks = '';
+  if (objLinks.length > 0) {
+      objLinks.forEach((element => {
+          printLinks += `
+          ${chalk.blueBright('File: ')} ${chalk.yellowBright(element.file)}
+          ${chalk.blueBright('Href: ')} ${chalk.yellowBright(element.href)}
+          ${chalk.blueBright('Text: ')} ${chalk.yellowBright(element.text.substring(0, 50))}
+          ${chalk.blueBright('Status text: ')} ${chalk.yellowBright(element.statusText)}
+          ${chalk.blueBright('Status: ')} ${chalk.yellowBright(element.status)}`;
+      }));
+  } else {
+      return chalk.yellowBright ('No se encontraron links')
+  }
+  return printLinks;
+}
+
+//console.log(validate(prueba))
+
+const stats = (objLinks) => {
+  const linksTotal = objLinks.length;
+  const uniqueLinks = new Set(objLinks.map((element) => element.href)).size;
+  const linkStats = `
+  ${chalk.blueBright('Total: ')} ${chalk.yellowBright(linksTotal)}
+  ${chalk.blueBright('Unique: ')} ${chalk.yellowBright(uniqueLinks)}`;
+
+  return linkStats;
+};
+
+//console.log(stats(prueba))
+
+const statsandValidate = (objLinks) => {
+  const linksTotal = objLinks.length;
+  const uniqueLinks = new Set(objLinks.map((element) => element.href)).size;
+  //console.log(uniqueLinks);
+  const brokenLinks = objLinks.filter((element) => element.status === 404).length;
+  const statsValidateTotal = `
+  ${chalk.blueBright('Total: ')} ${chalk.yellowBright(linksTotal)}
+  ${chalk.blueBright('Unique: ')} ${chalk.yellowBright(uniqueLinks)}
+  ${chalk.blueBright('Broken: ')} ${chalk.yellowBright(brokenLinks)}`;
+return statsValidateTotal;
+}
+
+//console.log(statsandValidate(prueba))
 
 
 module.exports = {
-    linkFile,
- }
+  linkFile,
+  validate,
+  stats,
+  statsandValidate
+}
