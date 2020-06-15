@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592187725937" clover="3.2.0">
-  <project timestamp="1592187725937" name="All files">
-    <metrics statements="57" coveredstatements="56" conditionals="15" coveredconditionals="12" methods="20" coveredmethods="20" elements="92" coveredelements="88" complexity="0" loc="57" ncloc="57" packages="1" files="3" classes="3"/>
+<coverage generated="1592192347926" clover="3.2.0">
+  <project timestamp="1592192347927" name="All files">
+    <metrics statements="87" coveredstatements="67" conditionals="21" coveredconditionals="13" methods="29" coveredmethods="21" elements="137" coveredelements="101" complexity="0" loc="87" ncloc="87" packages="1" files="4" classes="4"/>
+    <file name="cliOptions.js" path="C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\src\cliOptions.js">
+      <metrics statements="29" coveredstatements="10" conditionals="6" coveredconditionals="1" methods="9" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="41" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="51" count="0" type="stmt"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="58" count="1" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="60" count="0" type="stmt"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="65" count="0" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
+      <line num="71" count="0" type="stmt"/>
+      <line num="72" count="0" type="stmt"/>
+      <line num="74" count="0" type="stmt"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="85" count="1" type="stmt"/>
+    </file>
     <file name="index.js" path="C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\src\index.js">
-      <metrics statements="38" coveredstatements="37" conditionals="8" coveredconditionals="6" methods="15" coveredmethods="15"/>
+      <metrics statements="39" coveredstatements="38" conditionals="8" coveredconditionals="6" methods="15" coveredmethods="15"/>
       <line num="1" count="3" type="stmt"/>
       <line num="2" count="3" type="stmt"/>
       <line num="3" count="3" type="stmt"/>
@@ -14,7 +46,8 @@
       <line num="11" count="0" type="stmt"/>
       <line num="13" count="1" type="stmt"/>
       <line num="18" count="3" type="stmt"/>
-      <line num="22" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="22" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="23" count="3" type="stmt"/>
       <line num="26" count="35" type="stmt"/>
       <line num="30" count="15" type="stmt"/>
       <line num="34" count="3" type="stmt"/>

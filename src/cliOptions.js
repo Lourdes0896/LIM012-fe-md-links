@@ -1,20 +1,20 @@
 const chalk = require ('chalk');
 const prueba = [
-    {
-      href: 'https://es.wikipedia.org/wiki/Markdown',
-      text: 'Markdown',
-      file: './src/prueba.md',
-      statusText: 'ok',
-      status: 200
-    },
-    {
-      href: 'https://nodejs.org/',
-      text: 'Node.js',
-      file: './src/prueba.md',
-      statusText: 'ok',
-      status: 200
-    }
-  ]; 
+  {
+    href: 'https://es.wikipedia.org/wiki/Markdown',
+    text: 'Markdown',
+    file: './prueba/subPrueba/book1.md',
+    statusText: 'ok',
+    status: 200
+  },
+  {
+    href: 'https://nodejs.org/',
+    text: 'Node.js',
+    file: './prueba/subPrueba/book1.md',
+    statusText: 'ok',
+    status: 200
+  }
+]; 
 const linkFile = (objLinks) => {
     let basicPropertys = '';
     if( objLinks.length > 0) {
@@ -22,7 +22,8 @@ const linkFile = (objLinks) => {
         basicPropertys += `
         ${chalk.blueBright('File: ')} ${chalk.yellowBright(element.file)}
         ${chalk.blueBright('Href: ')} ${chalk.yellowBright(element.href)}
-        ${chalk.blueBright('Text: ')} ${chalk.yellowBright(element.text.substring(0, 50))}`;
+        ${chalk.blueBright('Text: ')} ${chalk.yellowBright(element.text.substring(0, 50))} \n `;
+
 
         }));
     }
@@ -32,7 +33,8 @@ const linkFile = (objLinks) => {
     return basicPropertys;
 }
 
-//console.log(linkFile(prueba));
+//console.log(linkFile('C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\prueba\subPrueba\book1.md'));
+//console.log(linkFile(prueba))
 
 const validate = (objLinks) => {
   let printLinks = '';
@@ -43,7 +45,7 @@ const validate = (objLinks) => {
           ${chalk.blueBright('Href: ')} ${chalk.yellowBright(element.href)}
           ${chalk.blueBright('Text: ')} ${chalk.yellowBright(element.text.substring(0, 50))}
           ${chalk.blueBright('Status text: ')} ${chalk.yellowBright(element.statusText)}
-          ${chalk.blueBright('Status: ')} ${chalk.yellowBright(element.status)}`;
+          ${chalk.blueBright('Status: ')} ${chalk.yellowBright(element.status)} \n`;
       }));
   } else {
       return chalk.yellowBright ('No se encontraron links')
