@@ -35,7 +35,7 @@ const linkFile = (objLinks) => {
 }
 
 //mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\subPrueba\\book1.md').then(linkFile).then(console.log);
-console.log(linkFile(prueba))
+//console.log(linkFile(prueba))
 
 const validate = (objLinks) => {
   let printLinks = '';
@@ -61,8 +61,8 @@ const stats = (objLinks) => {
   const linksTotal = objLinks.length;
   const uniqueLinks = new Set(objLinks.map((element) => element.href)).size;
   const linkStats = `
-  ${chalk.blueBright('Total: ')} ${chalk.yellowBright(linksTotal)}
-  ${chalk.blueBright('Unique: ')} ${chalk.yellowBright(uniqueLinks)}`;
+${chalk.blueBright('Total:')}${chalk.yellowBright(linksTotal)}
+${chalk.blueBright('Unique:')}${chalk.yellowBright(uniqueLinks)}`;
 
   return linkStats;
 };

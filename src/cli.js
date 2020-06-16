@@ -2,12 +2,14 @@
 const chalk = require ('chalk');
  const cliStatus = require ('../src/cliOptions');
 const {mdLinks} = require('./mdLinks.js');
+const validate = require('./validate');
 
  const route = process.argv[2];
  console.log('process', route);
- const validate = process.argv.indexOf('--validate');
- const stats = process.argv.indexOf('--stats');
- const help = process.argv.indexOf('--help');
+ const validateOpt = process.argv.indexOf('--validate');
+ const statsOpt = process.argv.indexOf('--stats');
+ const statsandValidateOpt = process.argv.indexOf('--stas --validate');
+ const help = process.argv.indexOf('--help')
 
  const OptionConsole = `
  -----------------------Valid Arguments--------------------------------
@@ -18,38 +20,40 @@ const {mdLinks} = require('./mdLinks.js');
  `;
 
 
- const cli = (route) => {
+ const cli = (route, validate, stats, help) => {
     if(help >= 0 || route === undefined) {
         console.log(OptionConsole);
     }
     if (route) {
         if(stats >= 0 && validate >= 0){
-            mdLinks(route, {validate:true})
+            return mdLinks(route, {validate:true})
             .then((links) => console.log(cliStatus.statsandValidate(links)))
-            .catch((error) => console.log(error));
+            .catch((error) => console.log(error)); 
         }
         if(validate >= 0){
-           mdLinks(route, {validate:true})
+           return mdLinks(route, {validate:true})
            .then((links) => console.log(cliStatus.validate(links)))
            .catch((error) => console.log(error));
        }
        if(stats >= 0){
-           mdLinks(route, {validate:false})
+          return mdLinks(route, {validate:false})
            .then((links) => console.log(cliStatus.stats(links)))
            .catch((error) => console.log(error));
        }else{
-           mdLinks(route)
+           return mdLinks(route)
            .then((links) => console.log(cliStatus.linkFile(links)))
            .catch((error) => console.log(error));
            
        }
     }
 };
-cli(route);
+cli(route, validateOpt, statsOpt, statsandValidateOpt);
 //console.log(process.argv);
-//console.log('probando cli', cli('./prueba/hola.md'))
+//console.log('probando cli', cli('./prueba'))
 //cli('./prueba').then((res) => console.log('este',res));
 
 
- console.log(cli('./prueba'))
-// console.log(cli)
+// console.log(cli('./prueba'))
+
+
+//mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\subPrueba\\book1.md',{validate:false} ).then(stats).then(console.log);
