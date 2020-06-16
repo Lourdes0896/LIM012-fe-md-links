@@ -1,4 +1,5 @@
 const chalk = require ('chalk');
+const {mdLinks} = require('./mdLinks');
 const prueba = [
   {
     href: 'https://es.wikipedia.org/wiki/Markdown',
@@ -33,8 +34,8 @@ const linkFile = (objLinks) => {
     return basicPropertys;
 }
 
-//console.log(linkFile('C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\prueba\subPrueba\book1.md'));
-//console.log(linkFile(prueba))
+//mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\subPrueba\\book1.md').then(linkFile).then(console.log);
+console.log(linkFile(prueba))
 
 const validate = (objLinks) => {
   let printLinks = '';
@@ -53,6 +54,7 @@ const validate = (objLinks) => {
   return printLinks;
 }
 
+//mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\subPrueba\\book1.md').then(validate).then(console.log);
 //console.log(validate(prueba))
 
 const stats = (objLinks) => {

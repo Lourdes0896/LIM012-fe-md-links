@@ -20,7 +20,7 @@ const checkAbsolutePath = (route) => path.isAbsolute(route);
 
 // función para transformar ruta relativa a absoluta
 const routeAbsolute = (route) => (path.isAbsolute(route) === true ? route : (path.resolve(route)));
- console.log('Transformando la ruta', routeAbsolute('./prueba'));
+//console.log('Transformando la ruta', routeAbsolute('./prueba'));
 
 // verificar si es un archivo - boolean
 const isFile = (route) => fs.statSync(route).isFile();
