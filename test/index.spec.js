@@ -118,6 +118,11 @@ describe('Extraer los links de los file .md', () => {
   it('Debe guardar los file md en un array', () => {
     const outputLinksfile =[
       {
+        href: 'https://es.wikipedia.org/wiki/Markdown',
+        text: 'Markdown',
+        file: 'prueba\\hola.md'
+      },
+      {
         href: 'https://nodejs.org/en/',
         text: 'Node.js',
         file: 'prueba\\hola.md'

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592358571427" clover="3.2.0">
-  <project timestamp="1592358571428" name="All files">
+<coverage generated="1592360290334" clover="3.2.0">
+  <project timestamp="1592360290334" name="All files">
     <metrics statements="58" coveredstatements="57" conditionals="15" coveredconditionals="13" methods="20" coveredmethods="20" elements="93" coveredelements="90" complexity="0" loc="58" ncloc="58" packages="1" files="3" classes="3"/>
     <file name="index.js" path="C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\src\index.js">
       <metrics statements="38" coveredstatements="37" conditionals="8" coveredconditionals="6" methods="15" coveredmethods="15"/>
@@ -37,8 +37,8 @@
       <line num="77" count="6" type="stmt"/>
       <line num="78" count="6" type="stmt"/>
       <line num="79" count="6" type="stmt"/>
-      <line num="80" count="12" type="stmt"/>
-      <line num="85" count="12" type="stmt"/>
+      <line num="80" count="18" type="stmt"/>
+      <line num="85" count="18" type="stmt"/>
       <line num="88" count="6" type="stmt"/>
       <line num="90" count="6" type="stmt"/>
       <line num="95" count="4" type="stmt"/>
@@ -61,12 +61,12 @@
       <line num="3" count="3" type="stmt"/>
       <line num="6" count="3" type="stmt"/>
       <line num="8" count="3" type="stmt"/>
-      <line num="9" count="6" type="stmt"/>
-      <line num="12" count="6" type="stmt"/>
-      <line num="17" count="6" type="cond" truecount="4" falsecount="0"/>
-      <line num="18" count="6" type="stmt"/>
-      <line num="19" count="6" type="stmt"/>
-      <line num="20" count="6" type="stmt"/>
+      <line num="9" count="9" type="stmt"/>
+      <line num="12" count="9" type="stmt"/>
+      <line num="17" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="18" count="9" type="stmt"/>
+      <line num="19" count="9" type="stmt"/>
+      <line num="20" count="9" type="stmt"/>
       <line num="27" count="3" type="stmt"/>
     </file>
   </project>

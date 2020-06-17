@@ -5,6 +5,13 @@ describe ('Validar los Links', () => {
     const input = './prueba/hola.md';
     const output = [
       {
+        href: 'https://es.wikipedia.org/wiki/Markdown',
+        text: 'Markdown',
+        file: './prueba/hola.md',
+        statusText: 'ok',
+        status: 200
+      },
+      {
         href: 'https://nodejs.org/en/',
         text: 'Node.js',
         file: './prueba/hola.md',

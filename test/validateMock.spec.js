@@ -8,6 +8,13 @@ const { extractLinkFile } = require ('../src/index.js')
           optionValidate('./prueba/hola.md')
               .then ((resolves) => expect (resolves).toEqual([
                             {
+                              href: 'https://es.wikipedia.org/wiki/Markdown',
+                              text: 'Markdown',
+                              file: './prueba/hola.md',
+                              statusText: 'ok',
+                              status: 200
+                            },
+                            {
                               href: 'https://nodejs.org/en/',
                               text: 'Node.js',
                               file: './prueba/hola.md',
