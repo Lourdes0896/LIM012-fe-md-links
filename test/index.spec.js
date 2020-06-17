@@ -116,18 +116,18 @@ describe('Extraer los links de los file .md', () => {
       expect (typeof extractLinkFile).toBe('function');
   });
   it('Debe guardar los file md en un array', () => {
-    const outputLinksfile = [
+    const outputLinksfile =[
       {
-        href: "https://es.wikipedia.org/wiki/Markdown",
-        text: "Markdown",
-        file: "prueba\\subPrueba\\book1.md"
+        href: 'https://nodejs.org/en/',
+        text: 'Node.js',
+        file: 'prueba\\hola.md'
       },
       {
-        href: "https://nodejs.org/",
-        text: "Node.js",
-        file: "prueba\\subPrueba\\book1.md"
+        href: 'https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452esssss',
+        text: 'mediumError',
+        file: 'prueba\\hola.md'
       }
     ]
-    expect(extractLinkFile(path.join('./prueba/subPrueba'))).toEqual(outputLinksfile);
+    expect(extractLinkFile(path.join('./prueba/hola.md'))).toEqual(outputLinksfile);
 });
 });

@@ -90,7 +90,7 @@ const extractLinkFile = (route) => {
    return arrLinks;
  };
 
-//console.log('extraer link de file', extractLinkFile('./prueba'));
+//console.log('extraer link de file', extractLinkFile('./prueba/hola.md'));
 
 module.exports = {
     checkRoute,

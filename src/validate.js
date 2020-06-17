@@ -1,8 +1,10 @@
 const processIndex = require ('./index.js');
 const fetch = require ('node-fetch'); 
+require('isomorphic-fetch')
 
 
 const optionValidate = (route) => {
+  //console.log(route)
     return Promise.all (processIndex.extractLinkFile(route).map((element) => {
         return fetch (element.href)
         .then((res) => {
@@ -20,7 +22,7 @@ const optionValidate = (route) => {
     }));
 };
   
-//optionValidate('./prueba').then((resp) => console.log('holaaaaaaa', resp));
+//optionValidate('./prueba/hola.md').then((resp) => console.log('holaaaaaaa', resp));
 
 module.exports = {
   optionValidate
