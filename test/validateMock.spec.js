@@ -1,6 +1,5 @@
  const fetchMock = require ('fetch-mock')
 const { optionValidate } = require('../src/validate.js')
-const { extractLinkFile } = require ('../src/index.js')
  require('isomorphic-fetch')
 
     describe('Funcion para validar ruta de validate.js', () => {
