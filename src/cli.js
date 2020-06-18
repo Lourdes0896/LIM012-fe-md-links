@@ -5,7 +5,7 @@ const {mdLinks} = require('./mdLinks.js');
 const validate = require('./validate');
 
  const route = process.argv[2];
- console.log('process', route);
+ //console.log('process', route);
  const validateOpt = process.argv.indexOf('--validate');
  const statsOpt = process.argv.indexOf('--stats');
  const statsandValidateOpt = process.argv.indexOf('--stas --validate');
@@ -48,6 +48,7 @@ const validate = require('./validate');
     }
 };
 cli(route, validateOpt, statsOpt, statsandValidateOpt);
+
 //console.log(process.argv);
 //console.log('probando cli', cli('./prueba'))
 //cli('./prueba').then((res) => console.log('este',res));

@@ -61,7 +61,7 @@ const getFileMD = (route) =>{
     } else  {
       getArrayFilesAndDir(route).forEach((element) => {
         const fileNewRoute = path.join(element);
-        // console.log('holaaaaaaaaa', fileNewRoute);
+        // console.log('REC', fileNewRoute);
         const getMDfileNewRoute = getFileMD(fileNewRoute);
         arrFileMD = arrFileMD.concat(getMDfileNewRoute);
       });
