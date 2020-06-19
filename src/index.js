@@ -61,14 +61,14 @@ const getFileMD = (route) =>{
     } else  {
       getArrayFilesAndDir(route).forEach((element) => {
         const fileNewRoute = path.join(element);
-        // console.log('REC', fileNewRoute);
+        //console.log('REC', fileNewRoute);
         const getMDfileNewRoute = getFileMD(fileNewRoute);
         arrFileMD = arrFileMD.concat(getMDfileNewRoute);
       });
     };
     return arrFileMD;
 };
-//console.log ('Array exclusivo de file .md', getFileMD('./src'));
+//console.log ('Array exclusivo de file .md', getFileMD('./prueba'));
 
 
 
