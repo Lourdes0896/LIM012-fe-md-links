@@ -34,11 +34,11 @@ const readFiles = (doc) => fs.readFileSync(doc, 'utf8');
 const isDirectory = (route) => fs.lstatSync(route).isDirectory();
 //console.log('es un directorio', isDirectory('./README.md'));
 
-//lee los elementos del directorio
+//lee los elementos del directorio - arr
 const readDirectory = (route) => fs.readdirSync(route);
- //console.log('leyendo elementos del directorio', readDirectory('./src'));
+//console.log('leyendo elementos del directorio', readDirectory('./src'));
 
-// Función para identificar que tipo de extension es la ruta/directorio
+// Función para identificar que tipo de extension es la ruta/directorio 
 const routeExtension = (route) => path.extname(route);
 //console.log('la extencion del archivo es', routeExtension('./test.spec.js'));
 

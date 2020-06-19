@@ -1,7 +1,7 @@
 {
   "name": "lim012-fe-md-links",
   "version": "1.0.0",
-  "description": "Lu-MdLinks",
+  "description": "Es una libreria que valida los links de archivos con extensión .md",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
@@ -15,7 +15,7 @@
   "url": "https://github.com/Lourdes0896",
   "license": "ISC",
   "bin": {
-    "mdLinks": "./src/cli.js"
+    "md-Links": "./src/cli.js"
   },
   "bugs": {
     "url": "https://github.com/Lourdes0896/LIM012-fe-md-links/issues"
