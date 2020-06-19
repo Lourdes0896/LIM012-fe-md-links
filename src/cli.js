@@ -12,11 +12,11 @@ const validate = require('./validate');
  const help = process.argv.indexOf('--help')
 
  const OptionConsole = `
- ${chalk.yellowBright('<*============================Valid Arguments========================================*>')}
- ${chalk.blueBright('  Opcion 1: ')} ${chalk.greenBright('md-links <path-to-file> (--stas --validate || --validate --stas)')}
- ${chalk.blueBright('  Opcion 2: ')} ${chalk.greenBright('md-links <path-to-file> --validate')}
- ${chalk.blueBright('  Opcion 3: ')} ${chalk.greenBright('md-links <path-to-file> --stats')}
- ${chalk.yellowBright('<*====================================================================================*>')}
+ ${chalk.yellow('<*============================Valid Arguments========================================*>')}
+ ${chalk.blueBright('  Opcion 1: ')} ${chalk.green('mdLinks <path-to-file> (--stas --validate || --validate --stas)')}
+ ${chalk.blueBright('  Opcion 2: ')} ${chalk.green('mdLinks <path-to-file> --validate')}
+ ${chalk.blueBright('  Opcion 3: ')} ${chalk.green('mdLinks <path-to-file> --stats')}
+ ${chalk.yellow('<*====================================================================================*>')}
  `;
 
 
