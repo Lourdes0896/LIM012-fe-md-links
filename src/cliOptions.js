@@ -40,7 +40,7 @@ const linkFile = (objLinks) => {
     return basicPropertys;
 }
 
-mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\hola.md').then(linkFile).then(console.log);
+//mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\hola.md').then(linkFile).then(console.log);
 //console.log(linkFile(prueba))
 
 const validate = (objLinks) => {
@@ -73,7 +73,7 @@ ${chalk.magenta('Unique: ')}${chalk.yellowBright(uniqueLinks)}`;
   return linkStats;
 };
 
-mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\hola.md', { validate : true}).then(stats).then(console.log);
+//mdLinks('C:\\Users\\Lourdes\\Documents\\GitHub\\LIM012-fe-md-links\\prueba\\hola.md', { validate : true}).then(stats).then(console.log);
 //console.log(stats(prueba))
 
 const statsandValidate = (objLinks) => {
