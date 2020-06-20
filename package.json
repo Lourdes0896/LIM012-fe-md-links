@@ -14,9 +14,6 @@
   "author": "Lourdes Merino",
   "url": "https://github.com/Lourdes0896",
   "license": "ISC",
-  "bin": {
-    "mdLinks": "./src/cli.js"
-  },
   "bugs": {
     "url": "https://github.com/Lourdes0896/LIM012-fe-md-links/issues"
   },
@@ -38,5 +35,8 @@
     "isomorphic-fetch": "^2.2.1",
     "marked": "^1.1.0",
     "node-fetch": "^2.6.0"
+  },
+  "bin": {
+    "mdLinks": "./src/cli.js"
   }
 }
