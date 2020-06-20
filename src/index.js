@@ -6,7 +6,7 @@ const renderer = new marked.Renderer();
 
 // funcion para saber si la ruta es valida - boolean
 const checkRoute = (route) => {
-    const routeIsValid = fs.existsSync(route);
+    const routeIsValid = (fs.existsSync(route));
     if (!routeIsValid) {
       return ('La ruta ingresada no es válida, intente de nuevo por favor');
     }

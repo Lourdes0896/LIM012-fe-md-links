@@ -67,8 +67,8 @@ const stats = (objLinks) => {
   const linksTotal = objLinks.length;
   const uniqueLinks = new Set(objLinks.map((element) => element.href)).size;
   const linkStats = `
-${chalk.magenta('Total: ')}${chalk.yellowBright(linksTotal)}
-${chalk.magenta('Unique: ')}${chalk.yellowBright(uniqueLinks)}`;
+${chalk.magenta('  Total: ')}${chalk.yellowBright(linksTotal)}
+${chalk.magenta('  Unique: ')}${chalk.yellowBright(uniqueLinks)}`;
 
   return linkStats;
 };
