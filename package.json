@@ -15,7 +15,7 @@
   "url": "https://github.com/Lourdes0896",
   "license": "ISC",
   "bin": {
-    "md-Links": "./src/cli.js"
+    "mdLinks": "./src/cli.js"
   },
   "bugs": {
     "url": "https://github.com/Lourdes0896/LIM012-fe-md-links/issues"
