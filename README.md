@@ -49,16 +49,19 @@ Opción (route) --validate directorio
 #### ⚫ CLI Stats
 
 Opción (route) --stats
+
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20stats.png)
 
 #### ⚫ CLI --stats --validate
 
 Opción (route) --validate --stats
+
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate%20stats.png)
 
 #### ⚫ CLI (sin option)
 
 Opción (route) 
+
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20sin%20option.png)
 
 ## ✔️ Test
