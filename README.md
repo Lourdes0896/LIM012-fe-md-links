@@ -1,4 +1,4 @@
-# Markdown Links
+# Markdown Links 📑
 [![Node version](https://img.shields.io/badge/node-v13.1.0-green)](https://nodejs.org/es/) ![Coverage Status](https://img.shields.io/badge/coverage-100%25-magenta) ![npm dependents](https://img.shields.io/badge/dependencies-4-pink)
 
 
@@ -12,11 +12,6 @@ Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
 muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
 la información que se quiere compartir.
 
-Dentro de una comunidad de código abierto, nos han propuesto crear una
-herramienta usando [Node.js](https://nodejs.org/), que lea y analice archivos
-en formato `Markdown`, para verificar los links que contengan y reportar
-algunas estadísticas.
-
 ![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
 ## Liberia: mdLinks
@@ -25,23 +20,67 @@ y verifica los links que contengan y reportan algunas estadisticas.
 
 ## Diagrama de flujo md-links
 
-
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20md-links.png)
 
 ## Diagrama de flujo cli
 
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20cli.png)
 
 ## JavaScript API
 
-## Criterios de aceptacion
+#### 🟢 JavaScript API - validate TRUE
 
-## Criterios de aceptacion
+Opción `{ validate: true }`
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20true.png)
 
-Estos son los criterios de lo que debe ocurrir para que se satisfagan 
-las necesidades del usuario:
+#### 🟢 JavaScript API - validate FALSE
 
-- Instalar la libreria via `npm install --global <github-user>/md-links`
+Opción `{ validate: false }`
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20false.png)
 
-### `README.md`
+## CLI (Command Line Interface - Interfaz de Línea de Comando)
+#### 🟢 CLI Validate
+
+Opción (route) --validate file
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate.png)
+
+Opción (route) --validate directorio
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/validate%20directorio.png)
+
+#### 🟢 CLI Stats
+
+Opción (route) --stats
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20stats.png)
+
+#### 🟢 CLI --stats --validate
+
+Opción (route) --validate --stats
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate%20stats.png)
+
+#### 🟢 CLI (sin option)
+
+Opción (route) 
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20sin%20option.png)
+
+## Test
+
+#### 🟢 Test 
+
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/npm%20test.png)
+
+#### 🟢 Test Index.js
+
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/test%20index.png)
+
+## Guía de instalación
+
+- Instalar la libreria via `npm install <github-user>/mdLinks`
+
+Módulo instalable via `npm install <github-user>/md-links`. Este módulo debe
+incluir tanto un ejecutable como una interfaz que podamos importar con `require`
+para usarlo programáticamente.
+
+#### `README.md`
 
 - Encontrar el *pseudo codigo* o *diagrama de flujo* con el algoritmo que
   soluciona el problema.
@@ -49,66 +88,14 @@ las necesidades del usuario:
 - Encontrar la documentación técnica de la librería.
 - Encontrar la Guía de uso e instalación de la librería.
 
-### API `mdLinks(path, opts)`
+## Guía de Uso
 
-- El módulo exporta una función con la interfaz (API) esperada.
-- El módulo implementa soporte para archivo individual
-- El módulo implementa soporte para directorios
-- El módulo implementa `options.validate`
+#### Cómo módulo:
 
-### CLI
-
-- Expone ejecutable `md-links` en el path (configurado en `package.json`)
-- Se ejecuta sin errores / output esperado.
-- El ejecutable implementa `--validate`.
-- El ejecutable implementa `--stats`.
-- El ejecutable implementa `--validate` y `--stats` juntos.
-
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
-
-Antes de comenzar a codear, es necesario que pensemos en la arquitectura y
-boilerplate del proyecto, por lo que `antes de que empieces tu planificacion
-y a trabajar en la funcionalidad de tu proyecto deberás de haber
-creado tu boilerplate y tus tests`. Esto debería quedar
-detallado en tu repo y haberte asegurado de haber recibido feedback de uno
-de tus coaches. Una vez hayas terminado de definir la arquitectura y los tests
-de tu proyecto estarás lista para iniciar con tu **planificacion** por lo cual
-deberas de hacer uso de una serie de _issues_ y _milestones_ para priorizar
-tus tareas y crear un _project_ para organizar el trabajo y poder hacer
-seguimiento de tu progreso.
-
-Dentro de cada _milestone_ se crearán y asignarán los _issues_ que cada quien
-considere necesarios.
-
-### JavaScript API
-
-El módulo debe poder importarse en otros scripts de Node.js y debe ofrecer la
-siguiente interfaz:
-
-#### `mdLinks(path, options)`
-
-##### Argumentos
-
-- `path`: Ruta absoluta o relativa al archivo o directorio. Si la ruta pasada es
-  relativa, debe resolverse como relativa al directorio desde donde se invoca
-  node - _current working directory_).
-- `options`: Un objeto con las siguientes propiedades:
-  * `validate`: Booleano que determina si se desea validar los links
-    encontrados.
-
-##### Valor de retorno
-
-La función debe retornar una promesa (`Promise`) que resuelva a un arreglo
-(`Array`) de objetos (`Object`), donde cada objeto representa un link y contiene
-las siguientes propiedades:
-
-- `href`: URL encontrada.
-- `text`: Texto que aparecía dentro del link (`<a>`).
-- `file`: Ruta del archivo donde se encontró el link.
-
-#### Ejemplo
+```js
+const mdLinks = require("md-links");
+```
+##### Ejemplo
 
 ```js
 const mdLinks = require("md-links");
@@ -132,14 +119,11 @@ mdLinks("./some/dir")
   .catch(console.error);
 ```
 
-### CLI (Command Line Interface - Interfaz de Línea de Comando)
+#### A traves de Linea de Comandos
 
-El ejecutable de nuestra aplicación debe poder ejecutarse de la siguiente
-manera a través de la terminal:
+`mdLinks <path-to-file> [options]`
 
-`md-links <path-to-file> [options]`
-
-Por ejemplo:
+##### Ejemplo
 
 ```sh
 $ md-links ./some/example.md
@@ -148,46 +132,11 @@ $ md-links ./some/example.md
 ./some/example.md http://google.com/ Google
 ```
 
-El comportamiento por defecto no debe validar si las URLs responden ok o no,
-solo debe identificar el archivo markdown (a partir de la ruta que recibe como
-argumento), analizar el archivo Markdown e imprimir los links que vaya
-encontrando, junto con la ruta del archivo donde aparece y el texto
-que hay dentro del link (truncado a 50 caracteres).
-
-#### Options
-
-##### `--validate`
-
-Si pasamos la opción `--validate`, el módulo debe hacer una petición HTTP para
-averiguar si el link funciona o no. Si el link resulta en una redirección a una
-URL que responde ok, entonces consideraremos el link como ok.
-
-Por ejemplo:
-
-```sh13d99df067c1
-$ md-13d99df067c1
-./some/example.md http://algo.com/2/3/ ok 200 Link a algo
-./some/example.md https://otra-cosa.net/algun-doc.html fail 404 algún doc
-./some/example.md http://google.com/ ok 301 Google
-```
-
-Vemos que el _output_ en este caso incluye la palabra `ok` o `fail` después de
-la URL, así como el status de la respuesta recibida a la petición HTTP a dicha
-URL.
-
-##### `--stats`
-
-Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
-básicas sobre los links.
-
 ```sh
 $ md-links ./some/example.md --stats
 Total: 3
 Unique: 3
 ```
-
-También podemos combinar `--stats` y `--validate` para obtener estadísticas que
-necesiten de los resultados de la validación.
 
 ```sh
 $ md-links ./some/example.md --stats --validate
@@ -195,12 +144,6 @@ Total: 3
 Unique: 3
 Broken: 1
 ```
-
-## Entregables
-
-Módulo instalable via `npm install <github-user>/md-links`. Este módulo debe
-incluir tanto un ejecutable como una interfaz que podamos importar con `require`
-para usarlo programáticamente.
 
 ## Objetivos de aprendizaje
 
