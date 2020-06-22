@@ -12,12 +12,12 @@
     "url": "git+https://github.com/LourdesMep29/LIM012-fe-md-links.git"
   },
   "author": "Lourdes Merino",
-  "url": "https://github.com/Lourdes0896",
+  "url": "https://github.com/LourdesMep29",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lourdes0896/LIM012-fe-md-links/issues"
+    "url": "https://github.com/LourdesMep29/LIM012-fe-md-links/issues"
   },
-  "homepage": "https://github.com/Lourdes0896/LIM012-fe-md-links#readme",
+  "homepage": "https://github.com/LourdesMep29/LIM012-fe-md-links#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^26.0.1",
