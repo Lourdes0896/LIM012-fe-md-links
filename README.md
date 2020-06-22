@@ -12,34 +12,33 @@ Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
 muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
 la información que se quiere compartir.
 
-![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
-
-## Liberia: mdLinks
+## ✔️ Libreria: mdLinks
 Es una herramienta que usa [Node.js](https://nodejs.org/), para leer y analizar archivos en formato `Markdown`
 y verifica los links que contengan y reportan algunas estadisticas.
 
-## Diagrama de flujo md-links
+## ✔️ Diagrama de flujo md-links
 
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20md-links.png)
 
-## Diagrama de flujo cli
+## ✔️ Diagrama de flujo cli
 
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20cli.png)
 
-## JavaScript API
+## ✔️ JavaScript API
 
-#### 🟢 JavaScript API - validate TRUE
+#### ⚫ JavaScript API - validate TRUE
 
 Opción `{ validate: true }`
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20true.png)
 
-#### 🟢 JavaScript API - validate FALSE
+#### ⚫ JavaScript API - validate FALSE
 
 Opción `{ validate: false }`
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20false.png)
 
 ## CLI (Command Line Interface - Interfaz de Línea de Comando)
-#### 🟢 CLI Validate
+
+#### ⚫ CLI Validate
 
 Opción (route) --validate file
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate.png)
@@ -47,32 +46,32 @@ Opción (route) --validate file
 Opción (route) --validate directorio
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/validate%20directorio.png)
 
-#### 🟢 CLI Stats
+#### ⚫ CLI Stats
 
 Opción (route) --stats
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20stats.png)
 
-#### 🟢 CLI --stats --validate
+#### ⚫ CLI --stats --validate
 
 Opción (route) --validate --stats
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate%20stats.png)
 
-#### 🟢 CLI (sin option)
+#### ⚫ CLI (sin option)
 
 Opción (route) 
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20sin%20option.png)
 
-## Test
+## ✔️ Test
 
-#### 🟢 Test 
+#### ⚫ Test 
 
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/npm%20test.png)
 
-#### 🟢 Test Index.js
+#### ⚫ Test Index.js
 
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/test%20index.png)
 
-## Guía de instalación
+## ✔️ Guía de instalación
 
 - Instalar la libreria via `npm install <github-user>/mdLinks`
 
@@ -88,9 +87,9 @@ para usarlo programáticamente.
 - Encontrar la documentación técnica de la librería.
 - Encontrar la Guía de uso e instalación de la librería.
 
-## Guía de Uso
+## ✔️ Guía de Uso
 
-#### Cómo módulo:
+#### ⚫ Cómo módulo:
 
 ```js
 const mdLinks = require("md-links");
@@ -119,7 +118,7 @@ mdLinks("./some/dir")
   .catch(console.error);
 ```
 
-#### A traves de Linea de Comandos
+#### ⚫ A traves de Linea de Comandos
 
 `mdLinks <path-to-file> [options]`
 
@@ -145,7 +144,7 @@ Unique: 3
 Broken: 1
 ```
 
-## Objetivos de aprendizaje
+## ✔️ Objetivos de aprendizaje
 
 Recuerda colocar en esta seccion los objetivos de aprendizaje que quedaron 
 pendientes de tu proyecto anterior.
