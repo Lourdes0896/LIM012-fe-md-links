@@ -1,5 +1,5 @@
 # Markdown Links 📑
-[![Node version](https://img.shields.io/badge/node-v13.1.0-green)](https://nodejs.org/es/) ![Coverage Status](https://img.shields.io/badge/coverage-100%25-magenta) ![npm dependents](https://img.shields.io/badge/dependencies-4-pink)
+[![Node version](https://img.shields.io/badge/node-v13.1.0-green)](https://nodejs.org/es/) ![Coverage Status](https://img.shields.io/badge/coverage-100%25-magenta) ![npm dependents](https://img.shields.io/badge/dependencies-5-pink)
 
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
@@ -44,7 +44,7 @@ Opción (route) --validate file
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate.png)
 
 Opción (route) --validate directorio
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/validate%20directorio.png)
+![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20dir%20validate.png)
 
 #### ⚫ CLI Stats
 
