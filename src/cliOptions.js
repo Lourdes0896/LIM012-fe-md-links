@@ -29,9 +29,9 @@ const linkFile = (objLinks) => {
     if( objLinks.length > 0) {
         objLinks.forEach((element => {
         basicPropertys += `
-        ${chalk.magenta('Href: ')} ${chalk.yellowBright(element.href)}
-        ${chalk.magenta('Text: ')} ${chalk.yellowBright(element.text.substring(0, 50))}
-        ${chalk.magenta('File: ')} ${chalk.yellowBright(element.file)} \n `;
+${chalk.magenta('Href: ')}${chalk.yellowBright(element.href)}
+${chalk.magenta('Text: ')}${chalk.yellowBright(element.text.substring(0, 50))}
+${chalk.magenta('File: ')}${chalk.yellowBright(element.file)}\n`;
         }));
     }
     if( objLinks.length === 0 ){
@@ -48,15 +48,15 @@ const validate = (objLinks) => {
   if (objLinks.length > 0) {
       objLinks.forEach((element => {
           printLinks += `
-          ${chalk.magenta('Href: ')} ${chalk.yellowBright(element.href)}
-          ${chalk.magenta('Text: ')} ${chalk.yellowBright(element.text.substring(0, 50))}
-          ${chalk.magenta('File: ')} ${chalk.yellowBright(element.file)}
-          ${chalk.magenta('Status Text: ')} ${chalk.yellowBright(element.statusText)}
-          ${chalk.magenta('Status: ')} ${chalk.yellowBright(element.status)} \n`;
+${chalk.magenta('Href: ')}${chalk.yellowBright(element.href)}
+${chalk.magenta('Text: ')}${chalk.yellowBright(element.text.substring(0, 50))}
+${chalk.magenta('File: ')}${chalk.yellowBright(element.file)}
+${chalk.magenta('Status Text: ')}${chalk.yellowBright(element.statusText)}
+${chalk.magenta('Status: ')}${chalk.yellowBright(element.status)}\n`;
       }));
   } else {
       return chalk.red ('No se encontraron links')
-  }
+}
   return printLinks;
 }
 
@@ -67,8 +67,8 @@ const stats = (objLinks) => {
   const linksTotal = objLinks.length;
   const uniqueLinks = new Set(objLinks.map((element) => element.href)).size;
   const linkStats = `
-${chalk.magenta('  Total: ')}${chalk.yellowBright(linksTotal)}
-${chalk.magenta('  Unique: ')}${chalk.yellowBright(uniqueLinks)}`;
+${chalk.magenta('Total: ')}${chalk.yellowBright(linksTotal)}
+${chalk.magenta('Unique: ')}${chalk.yellowBright(uniqueLinks)}`;
 
   return linkStats;
 };
@@ -82,9 +82,9 @@ const statsandValidate = (objLinks) => {
   //console.log(uniqueLinks);
   const brokenLinks = objLinks.filter((element) => element.status === 404).length;
   const statsValidateTotal = `
-  ${chalk.magenta('Total: ')} ${chalk.yellowBright(linksTotal)}
-  ${chalk.magenta('Unique: ')} ${chalk.yellowBright(uniqueLinks)}
-  ${chalk.magenta('Broken: ')} ${chalk.yellowBright(brokenLinks)}`;
+${chalk.magenta('Total: ')} ${chalk.yellowBright(linksTotal)}
+${chalk.magenta('Unique: ')} ${chalk.yellowBright(uniqueLinks)}
+${chalk.magenta('Broken: ')} ${chalk.yellowBright(brokenLinks)}`;
 return statsValidateTotal;
 }
 

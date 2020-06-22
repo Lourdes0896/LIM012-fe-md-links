@@ -1,6 +1,6 @@
 const processIndex = require ('./index.js');
 const fetch = require ('node-fetch'); 
-require('isomorphic-fetch')
+//require('isomorphic-fetch')
 
 
 const optionValidate = (route) => {
