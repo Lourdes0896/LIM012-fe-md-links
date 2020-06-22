@@ -11,7 +11,7 @@ const mdLinks = (route, options = { optionValidate : false}) => {
     });
 }
 
-//mdLinks(('./prueba/hola.md')).then((res) => console.log('mdLinks',res));
+//mdLinks(('./prueba/hola.md') , {validate : true}).then((res) => console.log('mdLinks',res));
 
 
 

@@ -1,7 +1,6 @@
 # Markdown Links
 [![Node version](https://img.shields.io/badge/node-v13.1.0-green)](https://nodejs.org/es/) ![Coverage Status](https://img.shields.io/badge/coverage-100%25-magenta) ![npm dependents](https://img.shields.io/badge/dependencies-4-pink)
 
-## Preámbulo
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
 ligero muy popular entre developers. Es usado en muchísimas plataformas que
@@ -20,59 +19,20 @@ algunas estadísticas.
 
 ![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
-## Introducción
+## Liberia: mdLinks
+Es una herramienta que usa [Node.js](https://nodejs.org/), para leer y analizar archivos en formato `Markdown`
+y verifica los links que contengan y reportan algunas estadisticas.
 
-[Node.js](https://nodejs.org/es/) es un entorno de ejecución para JavaScript
-construido con el [motor de JavaScript V8 de Chrome](https://developers.google.com/v8/).
-Esto nos va a permitir ejecutar JavaScript en el entorno del sistema operativo,
-ya sea tu máquina o un servidor, lo cual nos abre las puertas para poder
-interactuar con el sistema en sí, archivos, redes, ...
+## Diagrama de flujo md-links
 
-En este proyecto nos alejamos un poco del navegador para construir un programa
-que se ejecute usando Node.js, donde aprenderemos sobre cómo interactuar con el
-sistema archivos, con el entorno (_proceso_, _env_, _stdin/stdout/stderr_), ...
 
-## Objetivos
 
-El objetivo práctico de este proyecto es que aprendas cómo crear tu propia
-**librería** (o biblioteca - _library_) en JavaScript.
+## Diagrama de flujo cli
 
-Diseñar tu propia librería es una experiencia fundamental para cualquier
-desarrollador porque que te obliga a pensar en la interfaz (API) de tus
-_módulos_ y cómo será usado por otros developers. Debes tener especial
-consideración en peculiaridades del lenguaje, convenciones y buenas prácticas.
 
-Tópicos: [Node.js](https://nodejs.org/en/),
-[módulos (CommonJS)](https://nodejs.org/docs/latest-v0.10.x/api/modules.html),
-[file system](https://nodejs.org/api/fs.html),
-[path](https://nodejs.org/api/path.html),
-[http.get](https://nodejs.org/api/http.html#http_http_get_options_callback),
-parsing,
-[markdown](https://daringfireball.net/projects/markdown/syntax), CLI,
-[npm-scripts](https://docs.npmjs.com/misc/scripts),
-[semver](https://semver.org/), ...
+## JavaScript API
 
-## Consideraciones generales
-
-- Este proyecto se debe "resolver" de manera individual.
-
-- La librería debe estar implementada en JavaScript para ser ejecutada con
-Node.js. **Está permitido usar librerías externas**.
-
-- Tu módulo debe ser instalable via `npm install <github-user>/md-links`. Este
-módulo debe incluir tanto un _ejecutable_ que podamos invocar en la línea de
-comando como una interfaz que podamos importar con `require` para usarlo
-programáticamente.
-
-- Los tests unitarios deben **cubrir un mínimo del 70% de _statements_, _functions_,
-_lines_ y _branches_.**, ademas de pasar los test y el linter. Te recomendamos 
-utilizar [Jest](https://jestjs.io/) para tus pruebas unitarias.
-
-- Para este proyecto no está permitido utilizar `async/await`.
-
-- Para este proyecto es opcional el uso de ES Modules `(import/export)`, en el
-caso optes utilizarlo deberas de crear un script de `build` en el `package.json`
-que transforme el código ES6+ a ES5 con ayuda de babel.
+## Criterios de aceptacion
 
 ## Criterios de aceptacion
 
