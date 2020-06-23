@@ -63,6 +63,8 @@ mdLinks("./some/dir")
 
 `mdLinks <path-to-file> [options]`
 
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/option%20console.png)
+
 ##### Ejemplo
 
 ```sh
@@ -84,8 +86,6 @@ Total: 3
 Unique: 3
 Broken: 1
 ```
-
-![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/option%20console.png)
 
 ## ✔️ JavaScript API
 
