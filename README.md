@@ -18,61 +18,126 @@ y verifica los links que contengan y reportan algunas estadísticas.
 
 ## ✔️ Diagrama de flujo md-links
 
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20md-links.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20md-links.png)
 
 ## ✔️ Diagrama de flujo cli
 
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20cli.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/diagrama%20cli.png)
+
+## ✔️ Guía de instalación
+
+- Instalar la libreria via `npm install LourdesMep29/lu-mdlinks`
+
+## ✔️ Guía de Uso
+
+#### ⚫ Cómo módulo:
+
+```js
+const mdLinks = require("lu-mdlinks");
+```
+##### Ejemplo
+
+```js
+const mdLinks = require("md-links");
+
+mdLinks("./some/example.md")
+  .then(links => {
+    // => [{ href, text, file }]
+  })
+  .catch(console.error);
+
+mdLinks("./some/example.md", { validate: true })
+  .then(links => {
+    // => [{ href, text, file, status, ok }]
+  })
+  .catch(console.error);
+
+mdLinks("./some/dir")
+  .then(links => {
+    // => [{ href, text, file }]
+  })
+  .catch(console.error);
+```
+
+#### ⚫ A traves de Linea de Comandos
+
+`mdLinks <path-to-file> [options]`
+
+##### Ejemplo
+
+```sh
+$ md-links ./some/example.md
+./some/example.md http://algo.com/2/3/ Link a algo
+./some/example.md https://otra-cosa.net/algun-doc.html algún doc
+./some/example.md http://google.com/ Google
+```
+
+```sh
+$ md-links ./some/example.md --stats
+Total: 3
+Unique: 3
+```
+
+```sh
+$ md-links ./some/example.md --stats --validate
+Total: 3
+Unique: 3
+Broken: 1
+```
 
 ## ✔️ JavaScript API
 
 #### ⚫ JavaScript API - validate TRUE
 
 Opción `{ validate: true }`
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20true.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20true.png)
 
 #### ⚫ JavaScript API - validate FALSE
 
 Opción `{ validate: false }`
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20false.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/API%20validate%20false.png)
 
 ## CLI (Command Line Interface - Interfaz de Línea de Comando)
 
 #### ⚫ CLI Validate
 
 Opción (route) --validate file
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate.png)
 
 Opción (route) --validate directorio
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20dir%20validate.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/cli%20dir%20validate.png)
 
 #### ⚫ CLI Stats
 
 Opción (route) --stats
 
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20stats.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/cli%20stats.png)
 
 #### ⚫ CLI --stats --validate
 
 Opción (route) --validate --stats
 
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate%20stats.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/cli%20validate%20stats.png)
 
 #### ⚫ CLI (sin option)
 
 Opción (sólo route) 
 
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20sin%20option.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/cli%20sin%20option.png)
 
 ## ✔️ Test
 
 #### ⚫ Test 
 
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/npm%20test.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/npm%20test.png)
 
 #### ⚫ Test Index.js
 
-![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/test%20index.png)
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/test%20index.png)
+
+#### ⚫ Test cliOption.js
+
+![](https://github.com/LourdesMep29/LIM012-fe-md-links/blob/ludevelop/img/test%20cliOptions.png)
 
 
 ## ✔️ Objetivos de aprendizaje
