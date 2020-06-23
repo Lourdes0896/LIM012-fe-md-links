@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">35.56% </span>
+                <span class="strong">68.89% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>16/45</span>
+                <span class='fraction'>31/45</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>2/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">46.67% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>7/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.11% </span>
+                <span class="strong">73.68% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>16/38</span>
+                <span class='fraction'>28/38</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -189,7 +189,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -219,10 +219,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -232,7 +232,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -240,20 +240,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -296,11 +296,11 @@ const routeAbsolute = <span class="fstat-no" title="function not covered" >(r</s
 //console.log('Transformando la ruta', routeAbsolute('./prueba'));
 &nbsp;
 // verificar si es un archivo - boolean
-const isFile = <span class="fstat-no" title="function not covered" >(r</span>oute) =&gt; <span class="cstat-no" title="statement not covered" >fs.statSync(route).isFile();</span>
+const isFile = (route) =&gt; fs.statSync(route).isFile();
  //console.log('es un archivo', isFile('./README.md'));
 &nbsp;
 // para leer un archivo sincrono
-const readFiles = <span class="fstat-no" title="function not covered" >(d</span>oc) =&gt; <span class="cstat-no" title="statement not covered" >fs.readFileSync(doc, 'utf8');</span>
+const readFiles = (doc) =&gt; fs.readFileSync(doc, 'utf8');
  //console.log('leyendo elementos de un archivo', readFiles('./src/prueba.md'))
 &nbsp;
 // verificar si es un directorio -boolean *
@@ -312,7 +312,7 @@ const readDirectory = <span class="fstat-no" title="function not covered" >(r</s
 //console.log('leyendo elementos del directorio', readDirectory('./src'));
 &nbsp;
 // Función para identificar que tipo de extension es la ruta/directorio 
-const routeExtension = <span class="fstat-no" title="function not covered" >(r</span>oute) =&gt; <span class="cstat-no" title="statement not covered" >path.extname(route);</span>
+const routeExtension = (route) =&gt; path.extname(route);
 //console.log('la extencion del archivo es', routeExtension('./test.spec.js'));
 &nbsp;
 //array de las rutas de los elementos del directorio **
@@ -325,11 +325,11 @@ const getArrayFilesAndDir = <span class="fstat-no" title="function not covered" 
 &nbsp;
 &nbsp;
 // funcion que guarda en un array los files con extension .md (con su ruta)
-const getFileMD = <span class="fstat-no" title="function not covered" >(r</span>oute) =&gt;{
-   let arrFileMD = <span class="cstat-no" title="statement not covered" >[];</span>
-<span class="cstat-no" title="statement not covered" >    if (isFile(route)) {</span>
-<span class="cstat-no" title="statement not covered" >        if (routeExtension(route) === '.md'){</span>
-<span class="cstat-no" title="statement not covered" >            arrFileMD.push(route);</span>
+const getFileMD = (route) =&gt;{
+   let arrFileMD = [];
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (isFile(route)) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (routeExtension(route) === '.md'){
+            arrFileMD.push(route);
         }
     } else  {
 <span class="cstat-no" title="statement not covered" >      getArrayFilesAndDir(route).forEach(<span class="fstat-no" title="function not covered" >(e</span>lement) =&gt; {</span>
@@ -339,28 +339,28 @@ const getFileMD = <span class="fstat-no" title="function not covered" >(r</span>
 <span class="cstat-no" title="statement not covered" >        arrFileMD = arrFileMD.concat(getMDfileNewRoute);</span>
       });
     };
-<span class="cstat-no" title="statement not covered" >    return arrFileMD;</span>
+    return arrFileMD;
 };
 //console.log ('Array exclusivo de file .md', getFileMD('./prueba'));
 &nbsp;
 &nbsp;
 &nbsp;
 // extraer los link de los file.md 
-const extractLinkFile = <span class="fstat-no" title="function not covered" >(r</span>oute) =&gt; {
-   const arrLinks = <span class="cstat-no" title="statement not covered" >[];</span>
-<span class="cstat-no" title="statement not covered" >   getFileMD(route).forEach(<span class="fstat-no" title="function not covered" >(f</span>ile) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >     renderer.link = <span class="fstat-no" title="function not covered" >(h</span>ref, title, text) =&gt; {</span>
-       const link = <span class="cstat-no" title="statement not covered" >{</span>
+const extractLinkFile = (route) =&gt; {
+   const arrLinks = [];
+   getFileMD(route).forEach((file) =&gt; {
+     renderer.link = (href, title, text) =&gt; {
+       const link = {
          href,
          text,
          file
        };
-<span class="cstat-no" title="statement not covered" >       arrLinks.push(link);</span>
+       arrLinks.push(link);
      };
      //convierte el contenido del file en html y usa el renderer para buscar 
-<span class="cstat-no" title="statement not covered" >     marked(readFiles(file), { renderer })</span>
+     marked(readFiles(file), { renderer })
    });
-<span class="cstat-no" title="statement not covered" >   return arrLinks;</span>
+   return arrLinks;
  };
 &nbsp;
 //console.log('extraer link de file', extractLinkFile('./prueba/hola.md'));
@@ -385,7 +385,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Jun 22 2020 19:27:22 GMT-0500 (GMT-05:00)
+                at Mon Jun 22 2020 23:30:35 GMT-0500 (GMT-05:00)
             </div>
         </div>
         <script src="prettify.js"></script>
