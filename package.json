@@ -1,6 +1,6 @@
 {
   "name": "lu-mdlinks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Es una librería desarrollada con Node.js que valida los links de archivos con extensión .md",
   "main": "./src/index.js",
   "scripts": {
