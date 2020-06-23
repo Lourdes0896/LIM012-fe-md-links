@@ -1,7 +1,7 @@
 {
-  "name": "lim012-fe-md-links",
+  "name": "lu-mdlinks",
   "version": "1.0.0",
-  "description": "Es una libreria que valida los links de archivos con extensión .md",
+  "description": "Es una librería desarrollada con Node.js que valida los links de archivos con extensión .md",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",

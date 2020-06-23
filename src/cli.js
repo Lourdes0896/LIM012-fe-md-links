@@ -50,6 +50,8 @@ const validate = require('./validate');
 };
 cli(route, validateOpt, statsOpt, statsandValidateOpt);
 
+
+
 //console.log(process.argv);
 //console.log('probando cli', cli('./prueba'))
 //cli('./prueba').then((res) => console.log('este',res));

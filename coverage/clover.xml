@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592843324142" clover="3.2.0">
-  <project timestamp="1592843324143" name="All files">
+<coverage generated="1592870913240" clover="3.2.0">
+  <project timestamp="1592870913240" name="All files">
     <metrics statements="87" coveredstatements="85" conditionals="21" coveredconditionals="18" methods="29" coveredmethods="29" elements="137" coveredelements="132" complexity="0" loc="87" ncloc="87" packages="1" files="4" classes="4"/>
     <file name="cliOptions.js" path="C:\Users\Lourdes\Documents\GitHub\LIM012-fe-md-links\src\cliOptions.js">
       <metrics statements="30" coveredstatements="29" conditionals="6" coveredconditionals="5" methods="9" coveredmethods="9"/>
