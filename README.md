@@ -14,7 +14,7 @@ la información que se quiere compartir.
 
 ## ✔️ Libreria: mdLinks
 Es una herramienta que usa [Node.js](https://nodejs.org/), para leer y analizar archivos en formato `Markdown`
-y verifica los links que contengan y reportan algunas estadisticas.
+y verifica los links que contengan y reportan algunas estadísticas.
 
 ## ✔️ Diagrama de flujo md-links
 
@@ -60,7 +60,7 @@ Opción (route) --validate --stats
 
 #### ⚫ CLI (sin option)
 
-Opción (route) 
+Opción (sólo route) 
 
 ![](https://github.com/Lourdes0896/LIM012-fe-md-links/blob/ludevelop/img/cli%20sin%20option.png)
 
