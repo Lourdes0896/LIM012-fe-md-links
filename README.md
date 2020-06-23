@@ -26,7 +26,7 @@ y verifica los links que contengan y reportan algunas estadísticas.
 
 ## ✔️ Guía de instalación
 
-- Instalar la librería vía `npm install LourdesMep29/lu-mdlinks`
+- Instalar la librería vía `npm install LourdesMep29/LIM012-fe-md-links`
 
 ## ✔️ Guía de Uso
 
